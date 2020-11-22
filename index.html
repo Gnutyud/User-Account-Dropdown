@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>User Account Dropdown Menu</title>
+</head>
+
+<body>
+    <div class="dropdown">
+        <div class="avatar" onclick="myFirstFunction();">
+            <img src="Image/avatar.jpg" alt="avatar">
+        </div>
+        <div class="info" id="info">
+            <h3 class="name">Bích Phương <br><span>A Vietnamese Singer</span></h3>
+            <ul class="info-menu">
+                <li><i class="fa fa-user" class="icon"></i><a href="#">My Profile</a></li>
+                <li><i class="fa fa-edit" class="icon"></i><a href="#">Edit Profile</a></li>
+                <li><i class="fa fa-envelope" class="icon"></i><a href="#">Inbox</a></li>
+                <li><i class="fa fa-cog" class="icon"></i><a href="#">Settings</a></li>
+                <li><i class="fa fa-question-circle" class="icon"></i><a href="#">Help</a></li>
+                <li><i class="fa fa-sign-out" class="icon"></i><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function myFirstFunction() {
+            toggleMenu = document.querySelector('.info');
+            toggleMenu.classlist.toggle('show')
+        }
+    </script>
+</body>
+
+</html>

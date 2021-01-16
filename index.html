@@ -12,7 +12,7 @@
 
 <body>
     <div class="dropdown">
-        <div class="avatar" onclick="myFirstFunction();">
+        <div class="avatar" onclick="myFirstFunction()">
             <img src="Image/avatar.jpg" alt="avatar">
         </div>
         <div class="info" id="info">
@@ -29,8 +29,12 @@
     </div>
     <script>
         function myFirstFunction() {
-            toggleMenu = document.querySelector('.info');
-            toggleMenu.classlist.toggle('show')
+            var x = document.getElementById("info");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 </body>

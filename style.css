@@ -49,11 +49,6 @@ ul {
     top: 120px;
     width: 250px;
     transition: 0.5s;
-    display: none;
-}
-
-.dropdown:hover .info {
-    display: block;
 }
 
 .info:before {
@@ -79,7 +74,7 @@ ul {
 
 .name span {
     font-size: 14px;
-    color: #cecece;
+    color: #964Ec2;
     font-style: italic;
     font-weight: 400;
 }

@@ -49,6 +49,7 @@ ul {
     top: 120px;
     width: 250px;
     transition: 0.5s;
+    display: none;
 }
 
 .info:before {
@@ -108,4 +109,8 @@ ul {
 .info-menu li:hover a {
     color: red;
     transform: translateX(5px);
+}
+
+.show {
+    display: block;
 }

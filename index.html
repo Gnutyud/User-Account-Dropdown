@@ -12,8 +12,8 @@
 
 <body>
     <div class="dropdown">
-        <div class="avatar" onclick="myFirstFunction()">
-            <img src="Image/avatar.jpg" alt="avatar">
+        <div class="avatar">
+            <img src="Image/avatar.jpg" alt="avatar" class="avatarbtn" onclick="myFirstFunction()" id="dropdown">
         </div>
         <div class="info" id="info">
             <h3 class="name">Bích Phương <br><span>A Vietnamese Singer</span></h3>
@@ -29,11 +29,17 @@
     </div>
     <script>
         function myFirstFunction() {
-            var x = document.getElementById("info");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
+            document.getElementById("info").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+            var dropdown = document.getElementsByClassName("info");
+            if (!e.target.matches(".avatarbtn")) {
+                for (var i = 0; i < dropdown.length; i++) {
+                    let opendropdown = dropdown[i];
+                    if (opendropdown.classList.contains("show")) {
+                        opendropdown.classList.remove("show");
+                    }
+                }
             }
         }
     </script>
